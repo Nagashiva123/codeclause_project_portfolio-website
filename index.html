@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="name">NAGASHIVA RAYINI</h1>
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About us</a> </li>
+                    <li><a href="#">Services</a> </li>
+                    <li><a href="#">Portfolio</a> </li>
+                    <li><a href="#">Contact</a> </li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi,I'm <span>Nagashiva</span><br>Rayini From India </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--about session-->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sunt vero porro consequatur amet debitis corrupti, esse maiores commodi cupiditate placeat repudiandae nesciunt asperiores sit eos. Odit consequuntur consequatur pariatur.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>DESIGNING WEB/APP INTERFACE</li>
+                        <li><span>WEB DEVELOPMENT</span><br>WEB APP DEVELOPMENT</li>
+                        <li><span>APP DEVELOPMENT</span><br>BUILDING ANDROID/IOS APP</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-current</span><br>STUDENT </li>
+                        <li><span>2019-2021</span><br>STUDENT</li>
+                        <li><span>2005-2019</span><br>STUDENT</li>
+                    </ul>
+                </div>
+            
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2023-current</span><br>STUDENT </li>
+                    <li><span>2019-2021</span><br>STUDENT</li>
+                    <li><span>2005-2019</span><br>STUDENT</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+     var tablinks=document.getElementById("tab-links");
+     var tabcontents=document.getElementById("tab-contents");
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tablink of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+
+
+</body>
+</html>
